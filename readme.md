@@ -5,15 +5,15 @@
 ```sql
 SELECT name,birthplace FROM artists;
 ```
-     name     |  birthplace   
---------------+---------------
- Caravaggio   | Milan
- Picasso      | Malaga
- Leonardo     | Florence
- Michelangelo | Arezzo
- Josefa       | Seville
- Hans Hofmann | Weisenburg
- John         | San Francisco
+     name     |  birthplace   |
+--------------+---------------|
+ |Caravaggio   | Milan|
+ |Picasso      | Malaga|
+|Leonardo     | Florence|
+| Michelangelo | Arezzo|
+ |Josefa       | Seville|
+ |Hans Hofmann | Weisenburg|
+| John         | San Francisco|
 
  
 ## 2:
@@ -23,10 +23,10 @@ SELECT title,price FROM
 artworks WHERE price > 1600;
 ```
 
-      title      |  price   
------------------+----------
- The Cardsharps  | 40000.00
- Three Musicians | 11000.00
+    |  title      |  price   |
+|-----------------+----------|
+| The Cardsharps  | 40000.00|
+ |Three Musicians | 11000.00|
  
 ## 3:
 
@@ -35,9 +35,9 @@ SELECT title,type FROM artworks
 WHERE year=2000 
 OR artist_name = 'Picasso';
 ```
-       title      |  type  
------------------+--------
- Three Musicians | Modern
+|       title      |  type  |
+|-----------------|--------|
+| Three Musicians | Modern|
 
 ## 4:
 
@@ -53,14 +53,14 @@ from artists
 WHERE style in ('Baroque', 'Modern', 'Renaissance')
 ;
 ``` 
-     name     | country 
---------------+---------
- Caravaggio   | 
- Leonardo     | Italy
- Michelangelo | Italy
- Josefa       | Spain
- Hans Hofmann | Germany
- John         | USA
+ |    name     | country |
+|--------------+---------|
+ |Caravaggio   | 
+ |Leonardo     | Italy|
+| Michelangelo | Italy|
+ |Josefa       | Spain|
+ |Hans Hofmann | Germany|
+ |John         | USA|
 
 ## 6:
 
@@ -78,10 +78,10 @@ FROM customers
     customers.id = likeartists.customer_id
 WHERE artist_name = 'Picasso';
 ```
- customer_id | name  
--------------+-------
-           4 | Emre
-           5 | Saeid
+| customer_id | name  |
+|-------------+-------|
+    |       4 | Emre|
+         |  5 | Saeid|
 
 ## 8:
 
