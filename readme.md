@@ -6,9 +6,7 @@
 SELECT name,birthplace FROM artists;
 ```
 |     name     |  birthplace   |
-
-|--------------+---------------|
-
+|--------------|---------------|
 |Caravaggio   | Milan|
 |Picasso      | Malaga|
 |Leonardo     | Florence|
@@ -26,7 +24,7 @@ artworks WHERE price > 1600;
 ```
 
 |  title      |  price   |
-|-----------------+----------|
+|--------------|----------|
 | The Cardsharps  | 40000.00|
 |Three Musicians | 11000.00|
  
@@ -56,7 +54,7 @@ WHERE style in ('Baroque', 'Modern', 'Renaissance')
 ;
 ``` 
 |    name     | country |
-|--------------+---------|
+|-------------|---------|
 |Caravaggio   | 
 |Leonardo     | Italy|
 | Michelangelo | Italy|
@@ -70,7 +68,7 @@ WHERE style in ('Baroque', 'Modern', 'Renaissance')
 SELECT * FROM artworks ORDER BY title;
 ```
 |      title      | year |  type   |  price   |artist_name |
-|-----------------+------+---------+----------+-------------|
+|-----------------|------|--------|------------|--------|
 | The Cardsharps  | 1594 | Baroque | 40000.00 | Caravaggio|
 | Three Musicians | 1921 | Modern  | 11000.00 | Picasso|
 ## 7:
@@ -84,9 +82,9 @@ FROM customers
 WHERE artist_name = 'Picasso';
 ```
 | customer_id | name  |
-|-------------+-------|
-|       4     | Emre|
-|  5          | Saeid|
+|-------------|-------|
+|4     | Emre|
+|5          | Saeid|
 
 ## 8:
 
