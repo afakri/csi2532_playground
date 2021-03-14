@@ -6,7 +6,9 @@
 SELECT name,birthplace FROM artists;
 ```
 |     name     |  birthplace   |
+
 |--------------+---------------|
+
 |Caravaggio   | Milan|
 |Picasso      | Malaga|
 |Leonardo     | Florence|
