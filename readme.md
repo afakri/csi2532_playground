@@ -5,8 +5,8 @@
 ```sql
 SELECT name,birthplace FROM artists;
 ```
-     name     |  birthplace   |
---------------+---------------|
+|     name     |  birthplace   |
+|--------------+---------------|
 |Caravaggio   | Milan|
 |Picasso      | Malaga|
 |Leonardo     | Florence|
@@ -42,7 +42,19 @@ OR artist_name = 'Picasso';
 ## 4:
 
 ```sql
-
+select name,
+    birthplace
+from(
+        select name,
+            birthplace,
+            extract(
+                year
+                from dateofbirth
+            ) as year
+        from artists
+    ) as q1
+where year > 1880
+    and year < 1930;
 ```
 ## 5:
 
@@ -50,7 +62,9 @@ OR artist_name = 'Picasso';
 SELECT name,
     country
 from artists
-WHERE style in ('Baroque', 'Modern', 'Renaissance')
+WHERE style in 
+('Baroque', 'Modern',
+ 'Renaissance')
 ;
 ``` 
 |    name     | country |
