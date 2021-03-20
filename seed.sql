@@ -361,7 +361,61 @@ VALUES (
         '613-218-4006',
         'treat@gmail.com'
     );
-
-
-
-
+INSERT INTO scoring_methods(
+        main_score,
+        main_tie_break,
+        secondary_score,
+        secondary_tie_break
+    )
+VALUES ('Count DESC', 'Time ASC', NULL,NULL),
+    ('Count DESC', NULL, 'Count DESC',NULL);
+INSERT INTO organizes(
+        competition_year,
+        competition_id,
+        partner_id
+    )
+VALUES (2021, 1, 1),
+    (2021, 2, 2),
+    (2021, 3, 3);
+INSERT INTO events(
+        event_name,
+        competition_id,
+        scoring_method_id
+    )
+VALUES(
+        'max pull-ups in 10min',
+        1,
+        1
+    ),
+    (
+        'max push-ups in 10min',
+        2,
+        2
+    ),
+    (
+        'max squates in 10min',
+        3,
+        1
+    );
+INSERT INTO competes_in(athlete_id, event_id, competition_id)
+VALUES(1, 1, 1),
+    (2, 2, 2),
+    (3, 3, 3),
+    (4, 2, 1),
+    (5, 1, 3),
+    (6, 3, 2),
+    (7, 2, 1),
+    (8, 2, 3),
+    (9, 1, 2),
+    (10, 1, 3),
+    (11, 2, 1),
+    (12, 3, 3),
+    (13, 3, 2),
+    (14, 3, 1),
+    (15, 2, 3),
+    (16, 3, 2),
+    (17, 1, 1),
+    (18, 2, 3),
+    (19, 1, 1),
+    (20, 1, 2),
+    (21, 3, 1);
