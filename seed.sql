@@ -306,8 +306,7 @@ INSERT INTO competitions(
         competition_adress,
         start_date,
         end_date,
-        max_female,
-        max_male,
+        max_athletes,
         number_event,
         competition_contact_email,
         competition_contact_phone
@@ -317,7 +316,6 @@ VALUES (
         '28 lees avenue,Ottawa',
         '2021-04-03',
         '2021-04-06',
-        20,
         20,
         4,
         '613-218-4006',
@@ -329,7 +327,6 @@ VALUES (
         '2021-05-10',
         '2021-05-20',
         25,
-        20,
         3,
         '213-218-4006',
         'lifts@gmail.com'
@@ -340,7 +337,6 @@ VALUES (
         '2021-03-30',
         '2021-04-03',
         10,
-        15,
         2,
         '613-354-4006',
         'weights@gmail.com'
@@ -351,7 +347,6 @@ VALUES (
         '2021-04-11',
         '2021-04-15',
         25,
-        20,
         3,
         '223-218-4006',
         'pull@gmail.com'
@@ -362,12 +357,10 @@ VALUES (
         '2021-05-01',
         '2021-05-05',
         25,
-        20,
         3,
         '613-218-4006',
         'treat@gmail.com'
     );
-
 
 
 
